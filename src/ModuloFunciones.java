@@ -65,7 +65,8 @@ public class ModuloFunciones {
         String tarifa = "\nLa tarifa base es: " + calcularTarifaBase (peso);
         String recargoPorDistancia = "\nEl recargo por distancia es: " + calcularRecargoDistancia (km);
         String recargoPorTipo = "\nEl recargo por tipo es: " + calcularRecargoTipo (tipo);
-        String resumenTotal = lineaGuiones + resumenGeneral + tarifa + recargoPorDistancia + recargoPorTipo + "\nEl total final es: " + total;
+        String total_cuenta = "\nEl total final es: " + total;
+        String resumenTotal = lineaGuiones + resumenGeneral + tarifa + recargoPorDistancia + recargoPorTipo + total_cuenta;
         return resumenTotal;
     }
 }

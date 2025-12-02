@@ -19,7 +19,7 @@ public class Main {
         int km = scanner.nextInt();
         scanner.nextLine();
         while(km < 0) {
-            System.out.println("Ingrese nuevamente la distancia para la entrega del paquete en kilómetros: ");
+            System.out.println("Distancia erronea. Intente de nuevo: ");
             km = scanner.nextInt();
             scanner.nextLine();
         }
@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Ingrese el tipo de envío: ");
         String tipo = scanner.nextLine().toLowerCase();
         while(!tipo.equals("normal") && !tipo.equals("express") && !tipo.equals("prioritario") ) {
-            System.out.println("Ingrese  nuevamente el tipo de envío: ");
+            System.out.println("Tipo de envío invalido. Intente nuevamente: ");
             tipo = scanner.nextLine().toLowerCase();
 
         }
